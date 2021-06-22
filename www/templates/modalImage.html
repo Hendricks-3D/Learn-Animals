@@ -1,0 +1,22 @@
+<ion-modal-view>
+       
+<ion-header-bar class="bar bar-header bar-dark">
+	<h1 class="title">{{name}}</h1>
+	<button class="button button-clear" ng-click="closeModal()">Close</button>
+	
+</ion-header-bar>
+
+	<ion-content>
+	
+		<div>
+			<img ng-src="{{imgsrc}}"  alt="{{name}}" width="100%">
+			
+			<h2 style="text-align:center;">{{name}}</h2>
+			<hr id="hrline">
+		</div>
+              <div>
+              	<blockquote style="color:#387ef5"
+              	 >{{detail}}</blockquote>
+              </div>
+	</ion-content>
+</ion-modal-view>

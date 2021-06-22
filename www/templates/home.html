@@ -1,0 +1,35 @@
+<ion-view view-title="Learn Animals" >
+ 
+  <ion-content >
+  
+  <br>
+	  
+		<button style="margin-left:10px;" ng-click="toggleDetails()" class="button button-positive button-small" type="button">
+		  {{showDetails ? 'Hide Details':'Show Details'}}
+	   </button> 
+
+	  
+	  <hr>
+	  
+        <div class="card" ng-repeat="animal in animals | filter:filtText | filter:animal.name" >
+        
+        <div class="item item-divider">
+
+            {{animal.name}}
+            <span class="badge badge-assertive">{{animal.group}}</span>
+        </div>
+        
+        <div class="item item-thumbnail-left item-text-wrap">
+           
+            <img id="myImg" ng-src="{{animal.image}}" ng-click="openModal(animal.image,animal.detail,animal.name)" alt="{{animal.name}}">
+            
+			<h2 style="padding-left:20px; color:#ef473a;">{{animal.name}}</h2>
+             
+            <p ng-show="showDetails" >{{animal.detail}}</p>
+        </div>
+    </div>
+    
+ 
+    
+  </ion-content>
+</ion-view>

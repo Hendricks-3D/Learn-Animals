@@ -1,0 +1,40 @@
+/* Empty. Add your own CSS if you like */
+
+#hrline
+{
+	width:50px;
+	padding-left: 25%;
+	box-shadow: 0 10px 10px -10px #444 inset;
+	height: 3px;
+}
+
+
+input[type=text]
+{
+
+    width: auto%;
+    border: 2px solid #ccc;  
+    transition: 0.5s;
+    outline: none;
+	border-radius: 3px;
+}
+
+
+
+input[type=text]:focus
+{
+	
+	border: 2px solid  #387ef5 ;
+}
+
+label, input[type=text]
+{
+	
+	display:inline-block;
+}
+
+label
+{
+	margin-left: 30px;
+	font-weight: bold;
+}
